@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIKE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="path">
+
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+        <div class="thumbnail">
+            <li><img src="bike 8.jpg" alt="" onclick="big('bike 8.jpg');path('#e5e5e5');bg('purple')"></li>
+            <li><img src="bike 4.png" alt="" onclick="big('bike 4.png');path('white');bg('linear-gradient(70deg,blue,yellow)')"></li>
+            <li><img src="bike 5.png" alt="" onclick="big('bike 5.png');path('#e5e5e5');bg('linear-gradient(70deg,yellow,green)')"></li>
+        </div>
+        <div class="big-img">
+            <img src="bike 2.png" alt="" class="big">
+        </div>
+        <div class="content">
+            <p>&#x1F525;Let's ride&#x1F525;</p>
+            <h1>Don't Fear Dying Fear Not &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Living</h1><br>
+            <h5>&#x1F60E;For Bike Lovers & Bike Rider's &#x1F490;</h5>
+        </div>
+
+    </div>
+
+    <script>
+        function big(img){
+            document.querySelector('.big').src=img;
+        }
+        function path(color){
+            let path=document.querySelector('.path');
+            path.style.background=color;
+        }
+        function bg(background){
+            let bg=document.querySelector('.container');
+            bg.style.background=background;
+        }
+    </script>
+</body>
+</html>
